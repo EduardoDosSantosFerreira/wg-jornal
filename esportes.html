@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WG News | Esportes - Cobertura Completa dos Eventos Esportivos</title>
+    <meta name="description"
+        content="WG News oferece cobertura completa dos eventos esportivos em Itaquaquecetuba, Mogi, Suzano e região. Notícias sobre futebol, vôlei, atletismo e mais.">
+    <link rel="icon" type="image/png" href="./src/assets/img/wg-news-logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
+    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
+    <link rel="stylesheet" href="./src/assets/css/pages/sports.css">
+</head>
+
+<body>
+
+    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
+    <div style="height: 200px;"></div>
+
+    <!-- Cabeçalho da Página de Esportes -->
+    <section class="sports-header py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Esportes</h1>
+                    <p class="lead">Cobertura completa dos eventos esportivos na região do Alto Tietê</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="event-highlight">
+                        <h3 class="h5">Campeonato Regional 2025</h3>
+                        <p>Confira os destaques e a tabela dos jogos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque Principal de Esportes -->
+    <section class="sports-featured py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destaque Principal -->
+                <div class="col-lg-8">
+                    <div class="main-feature card border-0 shadow-sm h-100">
+                        <img src="https://s2-ge.glbimg.com/96YPW-Bxr1VmKX3uz95uUdRWaXU=/0x0:1131x735/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/a/K/YDiHmgQdmZAvLOWR01Hg/whatsapp-image-2025-06-09-at-15.14.45.jpeg"
+                            alt="Futebol Regional" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Futebol</span>
+                            <h1 class="card-title display-6">Itaquá vence Mogi em clássico eletrizante</h1>
+                            <p class="card-text lead">Partida válida pelo campeonato regional termina com placar de 3 a 2 e define liderança do grupo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicado há 2 horas | Por João Pedro</small>
+                                <a href="#" class="btn btn-primary btn-lg">Ler Análise Completa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaques Secundários -->
+                <div class="col-lg-4">
+                    <div class="secondary-features d-flex flex-column h-100 gap-3">
+                        <!-- Notícia 1 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://s2-ge.glbimg.com/P9GztvzY-ciGSWb3PqU9Xe0DRew=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/p/s/POQsgxSK25HocleLzZPQ/whatsapp-image-2024-11-15-at-11.37.37-1024x649.jpg"
+                                alt="Vôlei" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-1">Vôlei</span>
+                                <h3 class="card-title h5">Suzano brilha no torneio estadual de vôlei</h3>
+                                <p class="card-text small">Equipe feminina avança para as semifinais com vitória convincente.</p>
+                                <small class="text-muted">Publicado há 5 horas</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://i.ytimg.com/vi/r-inZMCJP3Q/sddefault.jpg"
+                                alt="Atletismo" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-warning mb-1">Atletismo</span>
+                                <h3 class="card-title h5">Atleta de Poá conquista ouro em corrida</h3>
+                                <p class="card-text small">Jovem promessa bate recorde regional nos 100 metros rasos.</p>
+                                <small class="text-muted">Publicado hoje</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://jornalouvidor.com.br/wp-content/uploads/2025/07/Design-sem-nome-2-696x583.jpg"
+                                alt="Basquete" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-1">Basquete</span>
+                                <h3 class="card-title h5">Arujá sedia torneio de basquete juvenil</h3>
+                                <p class="card-text small">Evento reúne equipes de toda a região no próximo fim de semana.</p>
+                                <small class="text-muted">Publicado ontem</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Esportes Locais -->
+    <section class="local-sports py-5 bg-light">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Esportes Locais</h2>
+                <div class="city-tabs">
+                    <button class="active">Itaquá</button>
+                    <button>Mogi</button>
+                    <button>Suzano</button>
+                    <button>Arujá</button>
+                    <button>Poá</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Itaquaquecetuba -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://gazetaregional.com.br/wp-content/uploads/2023/06/Futsal-amador.jpg" alt="Itaquaquecetuba" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Itaquá</span>
+                            <h3 class="card-title h5">Itaquá promove campeonato de futsal amador</h3>
+                            <p class="card-text">Torneio reúne 12 equipes locais; jogos começam neste sábado.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 3 horas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogi das Cruzes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.mogidascruzes.sp.gov.br/public/site/imagens/6/20230515145356646271b42431a.jpeg" alt="Mogi das Cruzes" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Mogi</span>
+                            <h3 class="card-title h5">Mogi sedia competição de vôlei escolar</h3>
+                            <p class="card-text">Evento incentiva prática esportiva entre jovens da rede municipal.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado hoje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suzano -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://cdn.diariodesuzano.com.br/upload/dn_arquivo/2023/06/1688079755.jpg" alt="Suzano" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Suzano</span>
+                            <h3 class="card-title h5">Suzano investe em nova pista de atletismo</h3>
+                            <p class="card-text">Obra promete fomentar o esporte e atrair competições regionais.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado ontem</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arujá -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://aguai.sp.gov.br/home/wp-content/uploads/2024/06/01-2-2-800x445.jpeg" alt="Arujá" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Arujá</span>
+                            <h3 class="card-title h5">Arujá organiza torneio de basquete de rua</h3>
+                            <p class="card-text">Evento gratuito incentiva a prática esportiva entre jovens.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Esportes Regionais e Nacionais -->
+    <section class="regional-national-sports py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Esportes Regionais -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Esportes Regionais</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://www.tiete.sp.gov.br/imagens/noticias/7787/IMG_6975_202403271711542274.JPG" class="img-fluid rounded-start h-100" alt="Futebol Regional">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-info mb-2">Futebol</span>
+                                    <h3 class="card-title h5">Alto Tietê sedia fase final do campeonato regional</h3>
+                                    <p class="card-text">Quatro equipes disputam o título em jogos emocionantes neste mês.</p>
+                                    <small class="text-muted">Publicado há 1 dia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-secondary me-2">Natação</span>
+                            <a href="#" class="text-dark">Nadadores de Mogi conquistam medalhas em torneio</a>
+                            <small class="text-muted d-block">Publicado há 3 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">Ciclismo</span>
+                            <a href="#" class="text-dark">Circuito de ciclismo atrai competidores em Suzano</a>
+                            <small class="text-muted d-block">Publicado há 5 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Judô</span>
+                            <a href="#" class="text-dark">Judocas de Poá se destacam em competição estadual</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-primary">Mais notícias regionais</a>
+                    </div>
+                </div>
+                
+                <!-- Esportes Nacionais -->
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Esportes Nacionais</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Futebol Nacional">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-danger mb-2">Futebol</span>
+                                    <h3 class="card-title h5">Seleção Brasileira se prepara para amistosos</h3>
+                                    <p class="card-text">Convocação inclui jovens talentos e veteranos para jogos em outubro.</p>
+                                    <small class="text-muted">Publicado há 2 dias</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-primary me-2">Vôlei</span>
+                            <a href="#" class="text-dark">Brasil enfrenta Argentina na Liga das Nações</a>
+                            <small class="text-muted d-block">Publicado hoje</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-success me-2">Atletismo</span>
+                            <a href="#" class="text-dark">Atletas brasileiros se destacam em mundial</a>
+                            <small class="text-muted d-block">Publicado há 4 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Basquete</span>
+                            <a href="#" class="text-dark">NBB anuncia nova temporada com mudanças</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-primary">Mais notícias nacionais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Destaques Esportivos -->
+    <section class="sports-highlights py-5 bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Destaques Esportivos</h2>
+                <p class="lead">Tudo sobre as competições e atletas da região</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="highlight-card card h-100 border-0 bg-secondary text-white">
+                        <div class="card-body text-center">
+                            <i class="fas fa-trophy fa-3x mb-3"></i>
+                            <h3 class="h4">Campeonatos Regionais</h3>
+                            <p>Acompanhe os resultados e a tabela dos jogos de futebol, vôlei e mais.</p>
+                            <a href="#" class="btn btn-light mt-3">Ver resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="highlight-card card h-100 border-0 bg-primary text-white">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-running fa-3x mb-3"></i>
+                            <h3 class="h4">Atletas em Destaque</h3>
+                            <p>Conheça os talentos regionais que estão brilhando no cenário esportivo.</p>
+                            <a href="#" class="btn btn-light mt-3">Ver perfis</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="highlight-card card h-100 border-0 bg-danger text-white">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calendar-alt fa-3x mb-3"></i>
+                            <h3 class="h4">Agenda Esportiva</h3>
+                            <p>Confira os próximos eventos esportivos na região do Alto Tietê.</p>
+                            <a href="#" class="btn btn-light mt-3">Ver agenda</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card bg-light text-dark h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Guia do Torcedor</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Como comprar ingressos para jogos</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Onde assistir às partidas ao vivo</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Dicas para apoiar equipes locais</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Regras dos campeonatos regionais</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Ver guia completo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card bg-light text-dark h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Cobertura Especial</h3>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-play-circle fa-2x text-danger me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Transmissão: Final do campeonato de futsal</h4>
+                                    <small>Assista ao vivo neste sábado, 18h</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-microphone-alt fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Podcast: Análise do futebol regional</h4>
+                                    <small>Especialistas discutem os destaques da temporada</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-newspaper fa-2x text-info me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Reportagem: O impacto do esporte local</h4>
+                                    <small>Como o esporte transforma comunidades</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Colunistas e Análise -->
+    <section class="columnists py-5">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">Colunistas e Análise</h2>
+                <p class="lead">Opiniões e análises de nossos especialistas em esportes</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Marcos Silva</h3>
+                            <p class="text-muted small">Especialista em futebol</p>
+                            <p class="card-text">"O futebol regional está mais competitivo do que nunca..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/22.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Fernanda Costa</h3>
+                            <p class="text-muted small">Comentarista de vôlei</p>
+                            <p class="card-text">"As equipes femininas da região estão prontas para o nacional..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Rafael Mendes</h3>
+                            <p class="text-muted small">Analista de atletismo</p>
+                            <p class="card-text">"Os jovens atletas do Alto Tietê são promessa para o futuro..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/55.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Juliana Lima</h3>
+                            <p class="text-muted small">Especialista em esportes coletivos</p>
+                            <p class="card-text">"O basquete regional ganha força com novos investimentos..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./src/assets/img/wg-news-logo-white.png" alt="WG News" class="footer-logo mb-3">
+                    <p>Jornalismo independente e de qualidade para a região do Alto Tietê. Notícias que importam, reportagens que fazem a diferença.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Editorias</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Política</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Esportes</a></li>
+                        <li><a href="#">Região</a></li>
+                        <li><a href="#">Opinião</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Cidades</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Itaquaquecetuba</a></li>
+                        <li><a href="#">Mogi das Cruzes</a></li>
+                        <li><a href="#">Suzano</a></li>
+                        <li><a href="#">Arujá</a></li>
+                        <li><a href="#">Poá</a></li>
+                        <li><a href="#">Guarulhos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Itaquaquecetuba/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 4002-8922</li>
+                        <li><i class="fas fa-envelope"></i> contato@wgnnews.com.br</li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <h6>Receba nossas notícias</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <button class="btn btn-primary" type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2023 WG News. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Termos de Uso</a> |
+                    <a href="#">Política de Privacidade</a> |
+                    <a href="#">Anuncie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/utils/aos.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+    <script src="./src/assets/js/components/navbar.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

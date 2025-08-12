@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WG News | Economia - Notícias sobre Mercado, Finanças e Negócios na Região</title>
+    <meta name="description"
+        content="WG News oferece cobertura econômica completa da região de Itaquaquecetuba, Mogi, Suzano e adjacências. Notícias sobre empregos, comércio, indústria e finanças pessoais.">
+    <link rel="icon" type="image/png" href="./src/assets/img/wg-news-logo.png.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
+    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
+    <link rel="stylesheet" href="./src/assets/css/pages/economy.css">
+</head>
+
+<body>
+
+    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
+    <div style="height: 200px;"></div>
+
+    <!-- Cabeçalho da Página de Economia -->
+    <section class="economy-header py-4 bg-success text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Economia</h1>
+                    <p class="lead">Notícias sobre mercado, finanças e negócios na região e no país</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="market-indicators">
+                        <h3 class="h5">Indicadores Econômicos</h3>
+                        <div class="indicators-container">
+                            <div class="indicator-item">
+                                <span class="indicator-label">Dólar</span>
+                                <span class="indicator-value" id="dolar-value">R$ 5,20</span>
+                                <span class="indicator-change negative"><i class="fas fa-caret-down"></i> 0,8%</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-label">IBOVESPA</span>
+                                <span class="indicator-value" id="ibovespa-value">122.345</span>
+                                <span class="indicator-change positive"><i class="fas fa-caret-up"></i> 1,2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque Principal de Economia -->
+    <section class="economy-featured py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destaque Principal -->
+                <div class="col-lg-8">
+                    <div class="main-feature card border-0 shadow-sm h-100">
+                        <img src="https://cdn.teletime.com.br/wp-content/uploads/2025/02/5G-png.webp"
+                            alt="Crise econômica global" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Última Hora</span>
+                            <h1 class="card-title display-6">Indústria regional cresce 8,7% no primeiro semestre, acima da média nacional</h1>
+                            <p class="card-text lead">Setor moveleiro e de autopeças puxam crescimento no Alto Tietê. Especialistas apontam recuperação pós-pandemia e investimentos em tecnologia como fatores principais. Geração de empregos atinge maior patamar em 5 anos.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicado há 2 horas | Por Ana Lúcia Mendes</small>
+                                <a href="#" class="btn btn-success btn-lg">Ler Análise Completa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaques Secundários -->
+                <div class="col-lg-4">
+                    <div class="secondary-features d-flex flex-column h-100 gap-3">
+                        <!-- Notícia 1 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/03/comercio-varejista-venda.jpg"
+                                alt="Comércio local" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-1">Varejo</span>
+                                <h3 class="card-title h5">Comércio local registra alta de 12% nas vendas</h3>
+                                <p class="card-text small">Feiras e promoções impulsionam resultados positivos no segundo trimestre.</p>
+                                <small class="text-muted">Publicado há 5 horas</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg"
+                                alt="Taxa de juros" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-warning mb-1">Finanças</span>
+                                <h3 class="card-title h5">BC reduz Selic para 10,25% ao ano</h3>
+                                <p class="card-text small">Decisão unânime do Copom pode influenciar crédito e investimentos.</p>
+                                <small class="text-muted">Publicado hoje</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg"
+                                alt="Empregos" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-1">Emprego</span>
+                                <h3 class="card-title h5">Desemprego cai para 7,8% na região</h3>
+                                <p class="card-text small">Dados do Dieese mostram criação de 12 mil postos nos últimos 3 meses.</p>
+                                <small class="text-muted">Publicado ontem</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Economia Regional -->
+    <section class="regional-economy py-5 bg-light">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Economia Regional</h2>
+                <div class="city-tabs">
+                    <button class="active">Itaquá</button>
+                    <button>Mogi</button>
+                    <button>Suzano</button>
+                    <button>Arujá</button>
+                    <button>Poá</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Itaquaquecetuba -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.itaquaquecetuba.sp.gov.br/site/wp-content/uploads/2023/03/Itaqua-1.jpg" alt="Itaquaquecetuba" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Itaquá</span>
+                            <h3 class="card-title h5">Nova indústria de plásticos gera 150 empregos em Itaquá</h3>
+                            <p class="card-text">Empresa investiu R$ 12 milhões e deve ampliar produção no próximo ano. Prefeitura comemora atração de negócios.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 4 horas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogi das Cruzes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.mogidascruzes.sp.gov.br/public/site/imagens/6/201808200855425b7aac3e3d816.jpg" alt="Mogi das Cruzes" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Mogi</span>
+                            <h3 class="card-title h5">Feira do Empreendedor em Mogi atrai 5 mil visitantes</h3>
+                            <p class="card-text">Evento gerou R$ 2,3 milhões em negócios e 80 vagas de emprego. Próxima edição já está marcada.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado hoje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suzano -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.suzano.sp.gov.br/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-11-at-16.14.14.jpeg" alt="Suzano" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Suzano</span>
+                            <h3 class="card-title h5">Suzano: Comércio cresce 15% no primeiro semestre</h3>
+                            <p class="card-text">Setor varejista supera expectativas com campanhas promocionais e aumento do poder de compra.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado ontem</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arujá -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.aruja.sp.gov.br/portal/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-03-at-14.27.16.jpeg" alt="Arujá" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Arujá</span>
+                            <h3 class="card-title h5">Arujá atrai nova distribuidora com investimento de R$ 8 mi</h3>
+                            <p class="card-text">Empresa do setor logístico deve gerar 80 empregos diretos até o fim do ano.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Economia Nacional e Internacional -->
+    <section class="national-international-economy py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Economia Nacional -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Economia Nacional</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg" class="img-fluid rounded-start h-100" alt="Economia Brasil">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Indicadores</span>
+                                    <h3 class="card-title h5">Inflação oficial fecha primeiro semestre em 3,12%</h3>
+                                    <p class="card-text">IPCA fica abaixo do piso da meta, mas alimentos ainda pressionam orçamento familiar.</p>
+                                    <small class="text-muted">Publicado há 1 dia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-success me-2">Agronegócio</span>
+                            <a href="#" class="text-dark">Exportações do agronegócio batem recorde no primeiro semestre</a>
+                            <small class="text-muted d-block">Publicado há 3 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Energia</span>
+                            <a href="#" class="text-dark">Conta de luz terá bandeira verde em julho, anuncia Aneel</a>
+                            <small class="text-muted d-block">Publicado há 5 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">Indústria</span>
+                            <a href="#" class="text-dark">Produção industrial cresce pelo terceiro mês consecutivo</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-success">Mais notícias nacionais</a>
+                    </div>
+                </div>
+                
+                <!-- Economia Internacional -->
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Economia Internacional</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg" class="img-fluid rounded-start h-100" alt="Economia Global">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-danger mb-2">Mercados</span>
+                                    <h3 class="card-title h5">Crise econômica global: como afeta os mercados brasileiros</h3>
+                                    <p class="card-text">Especialistas analisam impacto da recessão internacional e medidas do governo.</p>
+                                    <small class="text-muted">Publicado há 2 dias</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-primary me-2">EUA</span>
+                            <a href="#" class="text-dark">Fed mantém juros e sinaliza possível alta no próximo trimestre</a>
+                            <small class="text-muted d-block">Publicado hoje</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-secondary me-2">China</span>
+                            <a href="#" class="text-dark">Crescimento chinês desacelera para 4,9% no segundo trimestre</a>
+                            <small class="text-muted d-block">Publicado há 4 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">Comércio</span>
+                            <a href="#" class="text-dark">Acordo Mercosul-UE pode ser retomado, dizem negociadores</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-success">Mais notícias internacionais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Finanças Pessoais -->
+    <section class="personal-finance py-5 bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Finanças Pessoais</h2>
+                <p class="lead">Dicas e informações para cuidar melhor do seu dinheiro</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="finance-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-piggy-bank fa-3x mb-3 text-success"></i>
+                            <h3 class="h4">Como economizar em tempos de crise</h3>
+                            <p>10 dicas práticas para reduzir gastos sem perder qualidade de vida.</p>
+                            <a href="#" class="btn btn-success mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="finance-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                            <h3 class="h4">Investimentos para iniciantes</h3>
+                            <p>Guia completo para começar a investir com pouco dinheiro.</p>
+                            <a href="#" class="btn btn-primary mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="finance-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-file-invoice-dollar fa-3x mb-3 text-danger"></i>
+                            <h3 class="h4">Imposto de Renda 2024</h3>
+                            <p>Tudo o que você precisa saber para declarar corretamente.</p>
+                            <a href="#" class="btn btn-danger mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Calculadoras Financeiras</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-calculator me-2"></i> Simulador de financiamento</li>
+                                <li class="mb-2"><i class="fas fa-calculator me-2"></i> Juros compostos</li>
+                                <li class="mb-2"><i class="fas fa-calculator me-2"></i> Valor futuro de investimentos</li>
+                                <li class="mb-2"><i class="fas fa-calculator me-2"></i> Custo real do cartão de crédito</li>
+                            </ul>
+                            <a href="#" class="btn btn-light mt-3">Acessar calculadoras</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card bg-primary text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Cotações em Tempo Real</h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="quote-item mb-3">
+                                        <div class="quote-label">Dólar Comercial</div>
+                                        <div class="quote-value" id="dolar-comercial">R$ 5,20</div>
+                                    </div>
+                                    <div class="quote-item mb-3">
+                                        <div class="quote-label">Euro</div>
+                                        <div class="quote-value" id="euro-value">R$ 5,65</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="quote-item mb-3">
+                                        <div class="quote-label">IBOVESPA</div>
+                                        <div class="quote-value" id="ibovespa-quote">122.345</div>
+                                    </div>
+                                    <div class="quote-item mb-3">
+                                        <div class="quote-label">Bitcoin</div>
+                                        <div class="quote-value" id="bitcoin-value">R$ 185.432</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-light mt-3">Ver mais cotações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Negócios e Empreendedorismo -->
+    <section class="business-entrepreneurship py-5">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">Negócios e Empreendedorismo</h2>
+                <p class="lead">Notícias e dicas para quem tem ou quer abrir um negócio</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="business-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg" class="card-img-top" alt="Empreendedorismo">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Startups</span>
+                            <h3 class="card-title h5">Programa capacita 200 microempreendedores na região</h3>
+                            <p class="card-text">Iniciativa do Sebrae oferece treinamento gratuito em gestão e inovação.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 1 dia</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="business-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg" class="card-img-top" alt="Negócios">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Franquias</span>
+                            <h3 class="card-title h5">Franquias de baixo custo ganham espaço no Alto Tietê</h3>
+                            <p class="card-text">Modelos com investimento a partir de R$ 50 mil atraem novos empreendedores.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="business-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg" class="card-img-top" alt="Tecnologia">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Tecnologia</span>
+                            <h3 class="card-title h5">Empresa local desenvolve app para pequenos negócios</h3>
+                            <p class="card-text">Solução ajuda no controle financeiro e gestão de estoque para MEIs.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 3 dias</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="business-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.camara.leg.br/internet/agencia/infograficos-html5/eleicoes-2022/assets/img/eleicoes-2022.jpg" class="card-img-top" alt="Crédito">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Crédito</span>
+                            <h3 class="card-title h5">Linhas de crédito para mulheres empreendedoras</h3>
+                            <p class="card-text">Bancos oferecem taxas diferenciadas e assessoria especializada.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 5 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./src/assets/img/wg-news-logo-white.png" alt="WG News" class="footer-logo mb-3">
+                    <p>Jornalismo independente e de qualidade para a região do Alto Tietê. Notícias que importam, reportagens que fazem a diferença.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Editorias</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Política</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Esportes</a></li>
+                        <li><a href="#">Região</a></li>
+                        <li><a href="#">Opinião</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Cidades</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Itaquaquecetuba</a></li>
+                        <li><a href="#">Mogi das Cruzes</a></li>
+                        <li><a href="#">Suzano</a></li>
+                        <li><a href="#">Arujá</a></li>
+                        <li><a href="#">Poá</a></li>
+                        <li><a href="#">Guarulhos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Itaquaquecetuba/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 4002-8922</li>
+                        <li><i class="fas fa-envelope"></i> contato@wgnnews.com.br</li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <h6>Receba nossas notícias</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <button class="btn btn-primary" type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2026 WG News. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Termos de Uso</a> |
+                    <a href="#">Política de Privacidade</a> |
+                    <a href="#">Anuncie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/utils/aos.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+    <script src="./src/assets/js/components/navbar.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        
+        // Contador regressivo para as eleições (5 de outubro de 2024)
+        function updateCountdown() {
+            const electionDate = new Date('2024-10-05T00:00:00');
+            const now = new Date();
+            
+            const diff = electionDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        }
+        
+        // Atualizar a cada minuto
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+    </script>
+    <style>
+        /* Estilos específicos para a página de Política */
+.politics-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.election-countdown {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    min-width: 60px;
+}
+
+.countdown-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.countdown-label {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+/* Estilos para as abas de cidades */
+.city-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.city-tabs button {
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    color: #495057;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.city-tabs button.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.city-tabs button:hover:not(.active) {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para os cards de eleição */
+.election-card {
+    transition: transform 0.3s;
+}
+
+.election-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para os colunistas */
+.columnist-card {
+    transition: transform 0.3s;
+}
+
+.columnist-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .politics-header {
+        text-align: center;
+    }
+    
+    .election-countdown {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    .city-tabs {
+        justify-content: center;
+    }
+}
+    </style>
+</body>
+
+</html>

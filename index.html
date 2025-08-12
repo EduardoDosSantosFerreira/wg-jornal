@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WG News | Jornalismo de Qualidade com Cobertura Regional</title>
+    <meta name="description"
+        content="WG News oferece notícias atualizadas, reportagens investigativas e cobertura completa da região de Itaquaquecetuba, Mogi, Suzano e adjacências. Jornalismo independente e de qualidade.">
+    <link rel="icon" type="image/png" href="./src/assets/img/wg-news-logo.png.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
+    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
+</head>
+
+<body>
+
+    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
+    <div style="height: 200px;"></div>
+
+    <!-- Destaque Principal com Notícias Atuais -->
+    <section class="featured-news py-4">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destaque Principal -->
+                <div class="col-lg-8">
+                    <div class="main-feature card border-0 shadow-sm h-100">
+                        <img src="https://www.spbairros.com.br/wp-content/uploads/2013/09/catedral.jpg"
+                            alt="Crise econômica global" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Última Hora</span>
+                            <h1 class="card-title display-6">Crise econômica global: como afeta os mercados brasileiros
+                            </h1>
+                            <p class="card-text lead">Especialistas analisam impacto da recessão internacional e medidas
+                                do governo para proteger a economia nacional. Dólar bate recorde e bolsas mundiais
+                                registram queda generalizada.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicado há 2 horas</small>
+                                <a href="#" class="btn btn-primary btn-lg">Ler Análise Completa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaques Secundários -->
+                <div class="col-lg-4">
+                    <div class="secondary-features d-flex flex-column h-100 gap-3">
+                        <!-- Notícia 1 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/09/50514832812_9f10b331cb_3k.jpg"
+                                alt="Eleições 2024" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-1">Política</span>
+                                <h3 class="card-title h5">Pesquisa eleitoral: candidatos têm empate técnico a 3 meses
+                                    das eleições</h3>
+                                <p class="card-text small">Novo levantamento mostra disputa acirrada para governos
+                                    estaduais e presidência.</p>
+                                <small class="text-muted">Publicado há 5 horas</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://cdn.teletime.com.br/wp-content/uploads/2025/02/5G-png.webp"
+                                alt="Tecnologia 5G" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-1">Tecnologia</span>
+                                <h3 class="card-title h5">5G chega a mais 15 cidades esta semana; veja lista</h3>
+                                <p class="card-text small">Operadoras anunciam expansão da rede de quinta geração com
+                                    promoções para migração.</p>
+                                <small class="text-muted">Publicado hoje</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://imagens.ebc.com.br/BTEwIobKmkLh0N67tSvkiAVglRU=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/selecao_brasileira_2022_pre_mundial.jpg?itok=zzP7n0RC"
+                                alt="Copa do Mundo" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-1">Esportes</span>
+                                <h3 class="card-title h5">Seleção brasileira anuncia lista para amistosos da Copa</h3>
+                                <p class="card-text small">Técnico convoca 26 jogadores, incluindo 3 novatos; veja os
+                                    escolhidos.</p>
+                                <small class="text-muted">Publicado ontem</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Últimas Notícias -->
+    <section class="latest-news py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-4 pb-2 border-bottom">Últimas Notícias</h2>
+
+            <div class="row g-4">
+                <!-- Notícia 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://www.nobres.mt.gov.br/fotos_bancoimagens/6119.jpg" alt="Saúde pública"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Saúde</span>
+                            <h3 class="card-title h5">Ministério da Saúde anuncia campanha nacional de vacinação</h3>
+                            <p class="card-text">Novo calendário inclui doses de reforço contra COVID-19 e influenza
+                                para grupos prioritários.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 3 horas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://cavappcontent.s3.amazonaws.com/1748012793_02%20frente-fria-geada-temperaturas-amenas-ar-seco-recordes-clima-ao-vivo-23-05-25.webp"
+                            alt="Clima extremo" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Clima</span>
+                            <h3 class="card-title h5">Frente fria traz temperaturas abaixo de 5°C ao Sul do país</h3>
+                            <p class="card-text">Previsão indica geada em regiões serranas; Defesa Civil emite alerta.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 6 horas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Logo_do_Minist%C3%A9rio_da_Educa%C3%A7%C3%A3o_MEC.jpg/250px-Logo_do_Minist%C3%A9rio_da_Educa%C3%A7%C3%A3o_MEC.jpg"
+                            alt="Educação" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Educação</span>
+                            <h3 class="card-title h5">MEC divulga resultado do Enem 2024; consulte sua nota</h3>
+                            <p class="card-text">Mais de 3 milhões de estudantes podem acessar desempenho no exame.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado hoje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL4Q0YT-BASEIMAGE.jpg?w=419&h=283&crop=0"
+                            alt="Economia" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Economia</span>
+                            <h3 class="card-title h5">BC reduz Selic para 10,25% ao ano; entenda impactos</h3>
+                            <p class="card-text">Decisão unânime do Copom pode influenciar crédito e investimentos.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado ontem</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary px-4">Ver Todas as Notícias</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-grid py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Últimas Notícias</h2>
+                <div class="filter-tabs">
+                    <button class="active">Todas</button>
+                    <button>Política</button>
+                    <button>Economia</button>
+                    <button>Cultura</button>
+                    <button>Esportes</button>
+                    <button>Região</button>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <!-- Notícia 1 - Política -->
+                <div class="news-card">
+                    <img src="https://s2-g1.glbimg.com/YaNyxgO5-XnUeMYfp-AtnSrgM94=/696x390/smart/filters:cover():strip_icc()/s04.video.glbimg.com/x720/13803991.jpg"
+                        alt="Reunião política">
+                    <div class="news-content">
+                        <span class="news-category">Política</span>
+                        <h3>Vereadores aprovam aumento no IPTU para áreas nobres</h3>
+                        <p class="news-excerpt">Projeto prevê aumento progressivo nos próximos três anos para imóveis
+                            acima de R$ 500 mil...</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 2 horas atrás</span>
+                            <span><i class="far fa-comment"></i> 24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 2 - Economia -->
+                <div class="news-card">
+                    <img src="https://cdn.samaisvarejo.com.br/portal/image/1751641310942-diferenca-de-ate-r-220-marca-disputa-de-precos-na-cesta-basica-entre-redes.jpeg"
+                        alt="Gráfico economia">
+                    <div class="news-content">
+                        <span class="news-category">Economia</span>
+                        <h3>Comércio local registra alta nas vendas no primeiro semestre</h3>
+                        <p class="news-excerpt">Setor varejista cresce 8,7% na região, superando a média estadual...</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 5 horas atrás</span>
+                            <span><i class="far fa-comment"></i> 12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 3 - Cultura -->
+                <div class="news-card">
+                    <img src="https://s2-g1.glbimg.com/L1EXyoZNDqUpqNPPXyEQg6Lg1cU=/0x0:4000x3000/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/2/h/d8vZKYTy6toJa7kMdW4w/20240416-164232.jpg"
+                        alt="Evento cultural">
+                    <div class="news-content">
+                        <span class="news-category">Cultura</span>
+                        <h3>Biblioteca municipal recebe acervo raro de literatura brasileira</h3>
+                        <p class="news-excerpt">Coleção inclui primeiras edições de Machado de Assis e outros
+                            clássicos...</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 8 horas atrás</span>
+                            <span><i class="far fa-comment"></i> 7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 4 - Esportes -->
+                <div class="news-card">
+                    <img src="https://s2-oglobo.glbimg.com/S1ivQvUL2OwWiFPKWORGJ0w68Nk=/0x0:2000x1194/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2025/j/7/J6rViWTxyUdo0MkaPFdg/arte-43-.png"
+                        alt="Celebração esportiva">
+                    <div class="news-content">
+                        <span class="news-category">Esportes</span>
+                        <h3>Time regional avança às semifinais do campeonato estadual</h3>
+                        <p class="news-excerpt">Vitória por 2x1 garante classificação histórica para o time local...</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> Ontem</span>
+                            <span><i class="far fa-comment"></i> 42</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 5 - Região -->
+                <div class="news-card">
+                    <img src="https://www.bonito.ms.gov.br/wp-content/uploads/2022/12/Maquinas-na-obra-da-MS-345-Estrada-do-21-Foto-Edemir-Rodrigues.jpg"
+                        alt="Obras na região">
+                    <div class="news-content">
+                        <span class="news-category">Região</span>
+                        <h3>Obras na estrada principal devem terminar até novembro</h3>
+                        <p class="news-excerpt">Secretário garante que atraso será recuperado com trabalho em três
+                            turnos...</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> Ontem</span>
+                            <span><i class="far fa-comment"></i> 18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícia 6 - Saúde -->
+                <div class="news-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRfyl40edpHm8_21Kv6vFzqUkwBzDqL4ifw&s"
+                        alt="Centro médico">
+                    <div class="news-content">
+                        <span class="news-category">Saúde</span>
+                        <h3>Novo centro de especialidades médicas abre as portas</h3>
+                        <p class="news-excerpt">Unidade oferecerá consultas em 12 especialidades com agendamento pelo
+                            SUS...</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 2 dias atrás</span>
+                            <span><i class="far fa-comment"></i> 31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-primary">Carregar Mais Notícias</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Destaques Regionais -->
+    <section class="regional-highlights py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Destaques por Cidade</h2>
+                <div class="city-tabs">
+                    <button class="active">Itaquaquecetuba</button>
+                    <button>Mogi das Cruzes</button>
+                    <button>Suzano</button>
+                    <button>Arujá</button>
+                    <button>Poá</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="city-card">
+                        <img src="https://www.itaquareporter.com.br/wp-content/uploads/2023/03/Centro-de-Itaquaquecetuba-x-cidade-1024x675.jpeg"
+                            alt="Itaquaquecetuba" class="img-fluid">
+                        <div class="city-content">
+                            <h3>Itaquaquecetuba</h3>
+                            <ul>
+                                <li><a href="#">Prefeitura anuncia novo programa de habitação popular</a></li>
+                                <li><a href="#">Escolas municipais terão ensino integral em 2024</a></li>
+                                <li><a href="#">Centro cultural recebe exposição de artistas locais</a></li>
+                            </ul>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="city-card">
+                        <img src="https://www.mogidascruzes.sp.gov.br/public/site/imagens/6/201808200855425b7aac3e3d816.jpg"
+                            alt="Mogi das Cruzes" class="img-fluid">
+                        <div class="city-content">
+                            <h3>Mogi das Cruzes</h3>
+                            <ul>
+                                <li><a href="#">Novo hospital regional deve ser inaugurado em setembro</a></li>
+                                <li><a href="#">Feira do Empreendedor atrai mais de 5 mil visitantes</a></li>
+                                <li><a href="#">Projeto de revitalização do centro é aprovado</a></li>
+                            </ul>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="city-card">
+                        <img src="https://dmp5lmf6xm59p.cloudfront.net/101431/87xQkElisnHEX9ayxGZxhi54FXPjVd-metaV2hhdHNBcHAgSW1hZ2UgMjAyNC0xMS0wNSBhdCAxOC4zMy4yNiAoMSkuanBlZw==-.jpg"
+                            alt="Suzano" class="img-fluid">
+                        <div class="city-content">
+                            <h3>Suzano</h3>
+                            <ul>
+                                <li><a href="#">Parque municipal será ampliado em 30%</a></li>
+                                <li><a href="#">Prefeitura lança programa de capacitação profissional</a></li>
+                                <li><a href="#">Time de basquete feminino conquista título estadual</a></li>
+                            </ul>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcast e Vídeos -->
+    <section class="multimedia py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Multimídia</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="podcast-card">
+                        <h3><i class="fas fa-podcast"></i> WG Podcast</h3>
+                        <div class="podcast-episode">
+                            <img src="./src/assets/img/podcast.jpg" alt="Podcast">
+                            <div class="episode-info">
+                                <h4>Ep. 45 - Desafios da mobilidade urbana na região</h4>
+                                <p>Especialistas discutem soluções para o trânsito caótico nas cidades do Alto Tietê</p>
+                                <div class="player-controls">
+                                    <button class="btn btn-sm btn-primary"><i class="fas fa-play"></i> Ouvir</button>
+                                    <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-download"></i>
+                                        Baixar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="podcast-links">
+                            <a href="#" class="btn btn-sm btn-outline-dark"><i class="fab fa-spotify"></i> Spotify</a>
+                            <a href="#" class="btn btn-sm btn-outline-dark"><i class="fab fa-google-play"></i> Google
+                                Podcasts</a>
+                            <a href="#" class="btn btn-sm btn-outline-dark"><i class="fas fa-rss"></i> RSS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="video-card">
+                        <h3><i class="fas fa-play-circle"></i> WG Vídeos</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/example" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-links">
+                            <a href="#" class="btn btn-sm btn-outline-danger"><i class="fab fa-youtube"></i> YouTube</a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-facebook"></i>
+                                Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./src/assets/img/wg-news-logo-white.png" alt="WG News" class="footer-logo mb-3">
+                    <p>Jornalismo independente e de qualidade para a região do Alto Tietê. Notícias que importam,
+                        reportagens que fazem a diferença.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Editorias</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Política</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Esportes</a></li>
+                        <li><a href="#">Região</a></li>
+                        <li><a href="#">Opinião</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Cidades</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Itaquaquecetuba</a></li>
+                        <li><a href="#">Mogi das Cruzes</a></li>
+                        <li><a href="#">Suzano</a></li>
+                        <li><a href="#">Arujá</a></li>
+                        <li><a href="#">Poá</a></li>
+                        <li><a href="#">Guarulhos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Itaquaquecetuba/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 4002-8922</li>
+                        <li><i class="fas fa-envelope"></i> contato@wgnnews.com.br</li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <h6>Receba nossas notícias</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <button class="btn btn-primary" type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2026 WG News. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Termos de Uso</a> |
+                    <a href="#">Política de Privacidade</a> |
+                    <a href="#">Anuncie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/utils/aos.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+    <script src="./src/assets/js/components/navbar.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

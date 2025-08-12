@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WG News | Cultura - Acontecimentos e Eventos Culturais</title>
+    <meta name="description"
+        content="WG News traz as principais notícias culturais de Itaquaquecetuba, Mogi, Suzano e região. Cobertura de eventos, exposições, shows, festivais e muito mais.">
+    <link rel="icon" type="image/png" href="./src/assets/img/wg-news-logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
+    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
+    <link rel="stylesheet" href="./src/assets/css/pages/culture.css">
+</head>
+
+<body>
+
+    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
+    <div style="height: 200px;"></div>
+
+    <!-- Cabeçalho da Página de Cultura -->
+    <section class="culture-header py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Cultura</h1>
+                    <p class="lead">Notícias e eventos culturais na região do Alto Tietê</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="event-highlight">
+                        <h3 class="h5">Festival de Verão 2025</h3>
+                        <p>Confira a programação completa do maior evento cultural da região!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque Principal de Cultura -->
+    <section class="culture-featured py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destaque Principal -->
+                <div class="col-lg-8">
+                    <div class="main-feature card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Festival de Música" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Música</span>
+                            <h1 class="card-title display-6">Festival de Música de Mogi reúne grandes artistas</h1>
+                            <p class="card-text lead">Evento gratuito no próximo fim de semana promete atrair milhares de pessoas com shows de artistas locais e nacionais.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicado há 2 horas | Por Mariana Silva</small>
+                                <a href="#" class="btn btn-primary btn-lg">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaques Secundários -->
+                <div class="col-lg-4">
+                    <div class="secondary-features d-flex flex-column h-100 gap-3">
+                        <!-- Notícia 1 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1501386760812-e1ff06741262?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Exposição de Arte" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-1">Arte</span>
+                                <h3 class="card-title h5">Exposição em Suzano destaca artistas regionais</h3>
+                                <p class="card-text small">Mostra no Centro Cultural apresenta obras de novos talentos.</p>
+                                <small class="text-muted">Publicado há 4 horas</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Teatro" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-warning mb-1">Teatro</span>
+                                <h3 class="card-title h5">Peça teatral em Itaquá aborda temas sociais</h3>
+                                <p class="card-text small">Espetáculo discute desigualdade e inclusão; ingressos já à venda.</p>
+                                <small class="text-muted">Publicado hoje</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1531058020387-3df2a14e8939?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Literatura" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-1">Literatura</span>
+                                <h3 class="card-title h5">Feira do Livro de Poá começa neste sábado</h3>
+                                <p class="card-text small">Evento terá lançamentos, palestras e sessões de autógrafos.</p>
+                                <small class="text-muted">Publicado ontem</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Eventos Regionais -->
+    <section class="regional-events py-5 bg-light">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Eventos Regionais</h2>
+                <div class="city-tabs">
+                    <button class="active">Itaquá</button>
+                    <button>Mogi</button>
+                    <button>Suzano</button>
+                    <button>Arujá</button>
+                    <button>Poá</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Itaquaquecetuba -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b4bdd8b50e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Itaquaquecetuba" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Itaquá</span>
+                            <h3 class="card-title h5">Festa Junina de Itaquá atrai multidão</h3>
+                            <p class="card-text">Evento tradicional reúne música, dança e comidas típicas no centro da cidade.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 3 horas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogi das Cruzes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1531058020387-3df2a14e8939?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Mogi das Cruzes" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Mogi</span>
+                            <h3 class="card-title h5">Mogi sedia festival de cinema independente</h3>
+                            <p class="card-text">Mostra exibe curtas-metragens de diretores locais; entrada é gratuita.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado hoje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suzano -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1501386760812-e1ff06741262?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Suzano" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Suzano</span>
+                            <h3 class="card-title h5">Suzano recebe exposição de fotografia</h3>
+                            <p class="card-text">Mostra destaca o cotidiano da região em imagens capturadas por artistas locais.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado ontem</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arujá -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Arujá" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Arujá</span>
+                            <h3 class="card-title h5">Arujá promove sarau literário</h3>
+                            <p class="card-text">Evento reúne poetas e escritores para celebrar a literatura regional.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Cultura Local e Regional -->
+    <section class="local-regional-culture py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Cultura Local -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Cultura Local</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Cultura Local">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-info mb-2">Música</span>
+                                    <h3 class="card-title h5">Banda de Itaquá se destaca em festival estadual</h3>
+                                    <p class="card-text">Grupo local conquista público com mistura de ritmos brasileiros.</p>
+                                    <small class="text-muted">Publicado há 1 dia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-secondary me-2">Dança</span>
+                            <a href="#" class="text-dark">Grupo de dança de Suzano participa de competição nacional</a>
+                            <small class="text-muted d-block">Publicado há 3 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">Artesanato</span>
+                            <a href="#" class="text-dark">Feira de artesanato em Poá atrai visitantes</a>
+                            <small class="text-muted d-block">Publicado há 5 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Teatro</span>
+                            <a href="#" class="text-dark">Espetáculo infantil lota teatro em Mogi</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-primary">Mais notícias locais</a>
+                    </div>
+                </div>
+                
+                <!-- Cultura Regional -->
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Cultura Regional</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1501386760812-e1ff06741262?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Cultura Regional">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-danger mb-2">Festival</span>
+                                    <h3 class="card-title h5">Festival do Alto Tietê celebra diversidade cultural</h3>
+                                    <p class="card-text">Evento reúne música, dança e gastronomia de cinco cidades da região.</p>
+                                    <small class="text-muted">Publicado há 2 dias</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-primary me-2">Cinema</span>
+                            <a href="#" class="text-dark">Cineclube de Arujá exibe clássicos brasileiros</a>
+                            <small class="text-muted d-block">Publicado hoje</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-success me-2">Literatura</span>
+                            <a href="#" class="text-dark">Escritores regionais lançam antologia poética</a>
+                            <small class="text-muted d-block">Publicado há 4 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Gastronomia</span>
+                            <a href="#" class="text-dark">Festival gastronômico destaca sabores do Alto Tietê</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-primary">Mais notícias regionais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Agenda Cultural -->
+    <section class="cultural-agenda py-5 bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Agenda Cultural</h2>
+                <p class="lead">Os melhores eventos para você aproveitar na região</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="event-card card h-100 border-0 bg-secondary text-white">
+                        <div class="card-body text-center">
+                            <i class="fas fa-music fa-3x mb-3"></i>
+                            <h3 class="h4">Shows e Concertos</h3>
+                            <p>Confira a agenda de apresentações musicais em teatros e praças da região.</p>
+                            <a href="#" class="btn btn-light mt-3">Ver agenda</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="event-card card h-100 border-0 bg-primary text-white">
+                        <div class="card-body text-center">
+                            <i class="fas fa-palette fa-3x mb-3"></i>
+                            <h3 class="h4">Exposições de Arte</h3>
+                            <p>Visite mostras de pintura, fotografia e escultura em centros culturais.</p>
+                            <a href="#" class="btn btn-light mt-3">Ver agenda</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="event-card card h-100 border-0 bg-danger text-white">
+                        <div class="card-body text-center">
+                            <i class="fas fa-theater-masks fa-3x mb-3"></i>
+                            <h3 class="h4">Teatro e Dança</h3>
+                            <p>Espetáculos para todas as idades nos palcos do Alto Tietê.</p>
+                            <a href="#" class="btn btn-light mt-3">Ver agenda</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card bg-light text-dark h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Dicas Culturais</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Como participar de eventos gratuitos</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Onde encontrar ingressos para shows</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Dicas para visitar exposições</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Como apoiar artistas locais</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary mt-3">Ver mais dicas</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card bg-light text-dark h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Cobertura Especial</h3>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-play-circle fa-2x text-danger me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Festival de Verão de Mogi</h4>
+                                    <small>Assista à cobertura ao vivo neste sábado, 19h</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-microphone-alt fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Podcast: A cultura do Alto Tietê</h4>
+                                    <small>Entrevistas com artistas regionais</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-newspaper fa-2x text-info me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Reportagem: O impacto da cultura local</h4>
+                                    <small>Como eventos culturais impulsionam a economia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Colunistas e Críticas -->
+    <section class="columnists py-5">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">Colunistas e Críticas</h2>
+                <p class="lead">Análises e opiniões de nossos especialistas em cultura</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Clara Mendes</h3>
+                            <p class="text-muted small">Crítica de arte</p>
+                            <p class="card-text">"As exposições regionais estão ganhando destaque nacional pela originalidade..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Lucas Ferreira</h3>
+                            <p class="text-muted small">Especialista em música</p>
+                            <p class="card-text">"A nova geração de músicos do Alto Tietê está revolucionando o cenário..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Beatriz Lima</h3>
+                            <p class="text-muted small">Crítica de teatro</p>
+                            <p class="card-text">"Os palcos regionais trazem narrativas poderosas sobre a identidade local..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="columnist-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/55.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Colunista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Rafael Costa</h3>
+                            <p class="text-muted small">Escritor e poeta</p>
+                            <p class="card-text">"A literatura regional reflete a alma do Alto Tietê e suas histórias..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./src/assets/img/wg-news-logo-white.png" alt="WG News" class="footer-logo mb-3">
+                    <p>Jornalismo independente e de qualidade para a região do Alto Tietê. Notícias que importam, reportagens que fazem a diferença.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Editorias</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Política</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Esportes</a></li>
+                        <li><a href="#">Região</a></li>
+                        <li><a href="#">Opinião</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Cidades</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Itaquaquecetuba</a></li>
+                        <li><a href="#">Mogi das Cruzes</a></li>
+                        <li><a href="#">Suzano</a></li>
+                        <li><a href="#">Arujá</a></li>
+                        <li><a href="#">Poá</a></li>
+                        <li><a href="#">Guarulhos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Itaquaquecetuba/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 4002-8922</li>
+                        <li><i class="fas fa-envelope"></i> contato@wgnnews.com.br</li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <h6>Receba nossas notícias</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <button class="btn btn-primary" type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2026 WG News. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Termos de Uso</a> |
+                    <a href="#">Política de Privacidade</a> |
+                    <a href="#">Anuncie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/utils/aos.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+    <script src="./src/assets/js/components/navbar.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
