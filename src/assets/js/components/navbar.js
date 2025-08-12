@@ -1,7 +1,7 @@
 // Função para adicionar o HTML ao DOM
 function adicionarLoginAoDOM() {
-    var div = document.createElement("div");
-    div.innerHTML = `
+  var div = document.createElement("div");
+  div.innerHTML = `
     <!-- Barra de Navegação Modernizada -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
@@ -88,8 +88,28 @@ function adicionarLoginAoDOM() {
     </nav>
 
         `;
-  
-    document.body.appendChild(div);
+
+  document.body.appendChild(div);
+}
+
+adicionarLoginAoDOM();
+// Adicionar classe quando scrollar
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
   }
-  
-  adicionarLoginAoDOM();
+});
+
+// Fechar navbar ao clicar em um item (mobile)
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", function () {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    if (navbarCollapse.classList.contains("show")) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+      bsCollapse.hide();
+    }
+  });
+});
