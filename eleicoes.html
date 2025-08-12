@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WG News | Eleições - Cobertura Eleitoral na Região do Alto Tietê</title>
+    <meta name="description"
+        content="WG News traz notícias sobre as eleições em Itaquaquecetuba, Mogi, Suzano e região. Fique informado sobre candidatos, propostas, debates e resultados eleitorais.">
+    <link rel="icon" type="image/png" href="./src/assets/img/wg-news-logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
+    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
+    <link rel="stylesheet" href="./src/assets/css/pages/elections.css">
+</head>
+
+<body>
+
+    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
+    <div style="height: 200px;"></div>
+
+    <!-- Cabeçalho da Página de Eleições -->
+    <section class="elections-header py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Eleições</h1>
+                    <p class="lead">Cobertura completa das eleições na região do Alto Tietê e no Brasil</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="elections-highlight">
+                        <h3 class="h5">Eleições Municipais 2026</h3>
+                        <p>Confira datas, candidatos e propostas para a sua cidade!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque Principal de Eleições -->
+    <section class="elections-featured py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destaque Principal -->
+                <div class="col-lg-8">
+                    <div class="main-feature card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1579566346927-c68383817a25?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Debate eleitoral" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Eleições 2026</span>
+                            <h1 class="card-title display-6">Debate em Mogi reúne candidatos a prefeito</h1>
+                            <p class="card-text lead">Evento discute propostas para saúde, educação e segurança na cidade.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicado há 3 horas | Por Mariana Costa</small>
+                                <a href="#" class="btn btn-primary btn-lg">Ler Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaques Secundários -->
+                <div class="col-lg-4">
+                    <div class="secondary-features d-flex flex-column h-100 gap-3">
+                        <!-- Notícia 1 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Campanha eleitoral" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-1">Campanha</span>
+                                <h3 class="card-title h5">Suzano inicia campanha eleitoral nas ruas</h3>
+                                <p class="card-text small">Candidatos intensificam caminhadas e reuniões com eleitores.</p>
+                                <small class="text-muted">Publicado há 4 horas</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Urna eletrônica" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-warning mb-1">Urnas</span>
+                                <h3 class="card-title h5">Itaquá testa urnas eletrônicas para 2026</h3>
+                                <p class="card-text small">TSE realiza simulações para garantir segurança no pleito.</p>
+                                <small class="text-muted">Publicado hoje</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1544198365-4566b33c45d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Juventude" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-1">Juventude</span>
+                                <h3 class="card-title h5">Arujá promove fórum jovem sobre política</h3>
+                                <p class="card-text small">Evento engaja jovens na participação eleitoral.</p>
+                                <small class="text-muted">Publicado ontem</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Eleições Regionais -->
+    <section class="regional-elections py-5 bg-light">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Eleições Regionais</h2>
+                <div class="city-tabs">
+                    <button class="active">Itaquá</button>
+                    <button>Mogi</button>
+                    <button>Suzano</button>
+                    <button>Arujá</button>
+                    <button>Poá</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Itaquaquecetuba -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1579566346927-c68383817a25?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Itaquaquecetuba" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Itaquá</span>
+                            <h3 class="card-title h5">Itaquá lança guia do eleitor 2026</h3>
+                            <p class="card-text">Material informa sobre prazos e locais de votação.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 4 horas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogi das Cruzes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Mogi das Cruzes" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Mogi</span>
+                            <h3 class="card-title h5">Mogi organiza debate entre candidatos</h3>
+                            <p class="card-text">Evento aborda temas como mobilidade e segurança pública.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado hoje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suzano -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Suzano" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Suzano</span>
+                            <h3 class="card-title h5">Suzano registra aumento de eleitores</h3>
+                            <p class="card-text">Cidade ganha 10 mil novos votantes para as eleições de 2026.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado ontem</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arujá -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544198365-4566b33c45d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Arujá" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Arujá</span>
+                            <h3 class="card-title h5">Arujá promove curso sobre cidadania</h3>
+                            <p class="card-text">Iniciativa ensina jovens sobre o processo eleitoral.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Eleições Nacionais e Internacionais -->
+    <section class="national-international-elections py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Eleições Nacionais -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Eleições Nacionais</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1579566346927-c68383817a25?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Eleições Nacionais">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Legislação</span>
+                                    <h3 class="card-title h5">TSE define regras para eleições 2026</h3>
+                                    <p class="card-text">Novas normas visam maior transparência no processo eleitoral.</p>
+                                    <small class="text-muted">Publicado há 1 dia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-success me-2">Campanha</span>
+                            <a href="#" class="text-dark">Partidos iniciam convenções nacionais</a>
+                            <small class="text-muted d-block">Publicado há 3 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Tecnologia</span>
+                            <a href="#" class="text-dark">Urnas eletrônicas passam por testes de segurança</a>
+                            <small class="text-muted d-block">Publicado há 5 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">Participação</span>
+                            <a href="#" class="text-dark">Campanha incentiva voto consciente</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-primary">Mais notícias nacionais</a>
+                    </div>
+                </div>
+                
+                <!-- Eleições Internacionais -->
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Eleições Internacionais</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Eleições Globais">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-danger mb-2">Democracia</span>
+                                    <h3 class="card-title h5">EUA se preparam para eleição presidencial</h3>
+                                    <p class="card-text">Corrida eleitoral mobiliza milhões de eleitores em 2026.</p>
+                                    <small class="text-muted">Publicado há 2 dias</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-primary me-2">Europa</span>
+                            <a href="#" class="text-dark">França realiza eleições legislativas</a>
+                            <small class="text-muted d-block">Publicado hoje</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-secondary me-2">América Latina</span>
+                            <a href="#" class="text-dark">Chile elege novo presidente em 2026</a>
+                            <small class="text-muted d-block">Publicado há 4 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">Ásia</span>
+                            <a href="#" class="text-dark">Índia promove campanha de voto digital</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-primary">Mais notícias internacionais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Dicas e Informações Eleitorais -->
+    <section class="elections-tips py-5 bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Dicas e Informações Eleitorais</h2>
+                <p class="lead">Tudo que você precisa saber para exercer seu voto</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="elections-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-vote-yea fa-3x mb-3 text-primary"></i>
+                            <h3 class="h4">Como escolher seu candidato</h3>
+                            <p>Dicas para avaliar propostas e históricos dos candidatos.</p>
+                            <a href="#" class="btn btn-primary mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="elections-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-id-card fa-3x mb-3 text-success"></i>
+                            <h3 class="h4">Atualize seu título de eleitor</h3>
+                            <p>Passo a passo para regularizar sua situação eleitoral.</p>
+                            <a href="#" class="btn btn-success mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="elections-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-gavel fa-3x mb-3 text-danger"></i>
+                            <h3 class="h4">Entenda as leis eleitorais</h3>
+                            <p>Conheça as regras que garantem um processo justo.</p>
+                            <a href="#" class="btn btn-danger mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card bg-primary text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Serviços Eleitorais</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Consulte seu local de votação</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Acesse o e-Título digital</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Saiba mais sobre biometria</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Denuncie irregularidades eleitorais</li>
+                            </ul>
+                            <a href="#" class="btn btn-light mt-3">Acessar serviços</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Cobertura Especial</h3>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-play-circle fa-2x text-danger me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Transmissão: Debate ao vivo</h4>
+                                    <small>Assista neste sábado, 19h</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-microphone-alt fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Podcast: Eleições 2026</h4>
+                                    <small>Entrevistas com candidatos e analistas</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-newspaper fa-2x text-info me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Reportagem: Impacto do voto</h4>
+                                    <small>Como sua escolha molda o futuro da cidade</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Especialistas em Eleições -->
+    <section class="elections-experts py-5">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">Especialistas em Eleições</h2>
+                <p class="lead">Análises e conselhos de profissionais para um voto consciente</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/78.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Dr. José Almeida</h3>
+                            <p class="text-muted small">Cientista Político</p>
+                            <p class="card-text">"Avalie propostas com base em fatos, não promessas..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/67.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Dra. Clara Mendes</h3>
+                            <p class="text-muted small">Jurista Eleitoral</p>
+                            <p class="card-text">"Conhecer as leis eleitorais é essencial para o voto..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Sr. Pedro Lima</h3>
+                            <p class="text-muted small">Jornalista Político</p>
+                            <p class="card-text">"Acompanhe os debates para entender as propostas..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/89.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Sra. Ana Costa</h3>
+                            <p class="text-muted small">Líder Comunitária</p>
+                            <p class="card-text">"O voto é a voz da comunidade para mudanças..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./src/assets/img/wg-news-logo-white.png" alt="WG News" class="footer-logo mb-3">
+                    <p>Jornalismo independente e de qualidade para a região do Alto Tietê. Notícias que importam, reportagens que fazem a diferença.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Editorias</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Política</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Esportes</a></li>
+                        <li><a href="#">Tecnologia</a></li>
+                        <li><a href="#">Saúde</a></li>
+                        <li><a href="#">Educação</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Meio Ambiente</a></li>
+                        <li><a href="#">Eleições</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Cidades</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Itaquaquecetuba</a></li>
+                        <li><a href="#">Mogi das Cruzes</a></li>
+                        <li><a href="#">Suzano</a></li>
+                        <li><a href="#">Arujá</a></li>
+                        <li><a href="#">Poá</a></li>
+                        <li><a href="#">Guarulhos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Itaquaquecetuba/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 4002-8922</li>
+                        <li><i class="fas fa-envelope"></i> contato@wgnnews.com.br</li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <h6>Receba nossas notícias</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <button class="btn btn-primary" type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2025 WG News. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Termos de Uso</a> |
+                    <a href="#">Política de Privacidade</a> |
+                    <a href="#">Anuncie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/utils/aos.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+    <script src="./src/assets/js/components/navbar.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <style>
+        /* Estilos específicos para a página de Eleições */
+        .elections-header {
+            background: linear-gradient(135deg, #007bff 0%, #0052cc 100%);
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .elections-highlight {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+        }
+
+        /* Estilos para as abas de cidades */
+        .city-tabs {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .city-tabs button {
+            background-color: transparent;
+            border: 1px solid #dee2e6;
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.25rem;
+            color: #495057;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .city-tabs button.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .city-tabs button:hover:not(.active) {
+            background-color: #f8f9fa;
+        }
+
+        /* Estilos para os cards de eleições */
+        .elections-card {
+            transition: transform 0.3s;
+        }
+
+        .elections-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilos para os cards de especialistas */
+        .expert-card {
+            transition: transform 0.3s;
+        }
+
+        .expert-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .elections-header {
+                text-align: center;
+            }
+            
+            .elections-highlight {
+                margin-top: 1rem;
+                text-align: center;
+            }
+            
+            .city-tabs {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+
+</html>

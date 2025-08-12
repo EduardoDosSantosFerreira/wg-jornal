@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WG News | Clima - Previsão do Tempo e Alertas na Região do Alto Tietê</title>
+    <meta name="description"
+        content="WG News oferece a previsão do tempo, alertas climáticos e dicas para Itaquaquecetuba, Mogi, Suzano e região. Fique informado sobre as condições meteorológicas locais e nacionais.">
+    <link rel="icon" type="image/png" href="./src/assets/img/wg-news-logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
+    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
+    <link rel="stylesheet" href="./src/assets/css/pages/weather.css">
+</head>
+
+<body>
+    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
+    <div style="height: 200px;"></div>
+
+    <!-- Cabeçalho da Página de Clima -->
+    <section class="weather-header py-4 bg-info text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Clima</h1>
+                    <p class="lead">Previsão do tempo e alertas climáticos para o Alto Tietê e além</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="weather-highlight">
+                        <h3 class="h5">Previsão para o Fim de Semana</h3>
+                        <p>Sol e calor em alta no Alto Tietê!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque Principal de Clima -->
+    <section class="weather-featured py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destaque Principal -->
+                <div class="col-lg-8">
+                    <div class="main-feature card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1503435824048-a799a3a84bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Previsão do tempo" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Previsão</span>
+                            <h1 class="card-title display-6">Onda de calor atinge Mogi das Cruzes</h1>
+                            <p class="card-text lead">Temperaturas podem chegar a 35°C nesta semana, alerta meteorologia.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Atualizado há 2 horas | Por Lucas Silva</small>
+                                <a href="#" class="btn btn-info btn-lg">Ver Previsão Completa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaques Secundários -->
+                <div class="col-lg-4">
+                    <div class="secondary-features d-flex flex-column h-100 gap-3">
+                        <!-- Notícia 1 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1518837695005-208458cedf0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Chuva" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-1">Alerta</span>
+                                <h3 class="card-title h5">Suzano em alerta para chuvas fortes</h3>
+                                <p class="card-text small">Defesa Civil orienta moradores sobre áreas de risco.</p>
+                                <small class="text-muted">Atualizado há 3 horas</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1515694346937-94d8f66f4c6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Qualidade do ar" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-warning mb-1">Ar</span>
+                                <h3 class="card-title h5">Itaquá monitora qualidade do ar</h3>
+                                <p class="card-text small">Poluição diminui com ventos favoráveis na região.</p>
+                                <small class="text-muted">Atualizado hoje</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1473496169904-658ba7b873b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Clima extremo" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-1">Extremo</span>
+                                <h3 class="card-title h5">Arujá prepara-se para ventos fortes</h3>
+                                <p class="card-text small">Autoridades recomendam cuidados com estruturas leves.</p>
+                                <small class="text-muted">Atualizado ontem</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Previsão Regional -->
+    <section class="regional-weather py-5 bg-light">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Previsão Regional</h2>
+                <div class="city-tabs">
+                    <button class="active">Itaquá</button>
+                    <button>Mogi</button>
+                    <button>Suzano</button>
+                    <button>Arujá</button>
+                    <button>Poá</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Itaquaquecetuba -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="weather-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1503435824048-a799a3a84bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Itaquaquecetuba" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Itaquá</span>
+                            <h3 class="card-title h5">Itaquá: Sol com poucas nuvens</h3>
+                            <p class="card-text">Máx: 32°C | Mín: 20°C | Umidade: 60%</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 1 hora</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogi das Cruzes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="weather-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1518837695005-208458cedf0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Mogi das Cruzes" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Mogi</span>
+                            <h3 class="card-title h5">Mogi: Possibilidade de chuva</h3>
+                            <p class="card-text">Máx: 30°C | Mín: 18°C | Umidade: 70%</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado hoje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suzano -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="weather-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1515694346937-94d8f66f4c6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Suzano" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Suzano</span>
+                            <h3 class="card-title h5">Suzano: Alerta de tempestade</h3>
+                            <p class="card-text">Máx: 28°C | Mín: 19°C | Umidade: 80%</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado ontem</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arujá -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="weather-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7b873b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Arujá" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Arujá</span>
+                            <h3 class="card-title h5">Arujá: Ventos moderados</h3>
+                            <p class="card-text">Máx: 31°C | Mín: 21°C | Umidade: 65%</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ver detalhes</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Clima Nacional e Internacional -->
+    <section class="national-international-weather py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Clima Nacional -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Clima Nacional</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1503435824048-a799a3a84bf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Clima Nacional">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-info mb-2">Sul</span>
+                                    <h3 class="card-title h5">Frio intenso atinge o Sul do Brasil</h3>
+                                    <p class="card-text">Temperaturas abaixo de 0°C causam geadas em SC e RS.</p>
+                                    <small class="text-muted">Atualizado há 1 dia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-success me-2">Nordeste</span>
+                            <a href="#" class="text-dark">Chuvas beneficiam agricultura no Nordeste</a>
+                            <small class="text-muted d-block">Atualizado há 3 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Sudeste</span>
+                            <a href="#" class="text-dark">SP registra recorde de calor para agosto</a>
+                            <small class="text-muted d-block">Atualizado há 5 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-danger me-2">Amazônia</span>
+                            <a href="#" class="text-dark">Seca preocupa na região amazônica</a>
+                            <small class="text-muted d-block">Atualizado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-info">Mais notícias nacionais</a>
+                    </div>
+                </div>
+                
+                <!-- Clima Internacional -->
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Clima Internacional</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1518837695005-208458cedf0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Clima Global">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-danger mb-2">EUA</span>
+                                    <h3 class="card-title h5">Furacão ameaça costa leste dos EUA</h3>
+                                    <p class="card-text">Autoridades emitem alertas para evacuação em áreas costeiras.</p>
+                                    <small class="text-muted">Atualizado há 2 dias</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-primary me-2">Europa</span>
+                            <a href="#" class="text-dark">Ondas de calor afetam sul da Europa</a>
+                            <small class="text-muted d-block">Atualizado hoje</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-secondary me-2">Ásia</span>
+                            <a href="#" class="text-dark">Monções causam inundações na Índia</a>
+                            <small class="text-muted d-block">Atualizado há 4 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">África</span>
+                            <a href="#" class="text-dark">Seca severa impacta leste da África</a>
+                            <small class="text-muted d-block">Atualizado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-info">Mais notícias internacionais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Dicas e Alertas Climáticos -->
+    <section class="weather-tips py-5 bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Dicas e Alertas Climáticos</h2>
+                <p class="lead">Como se preparar para as condições do tempo</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="weather-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-umbrella fa-3x mb-3 text-info"></i>
+                            <h3 class="h4">Preparando-se para chuvas</h3>
+                            <p>Dicas para proteger sua casa e evitar transtornos em temporais.</p>
+                            <a href="#" class="btn btn-info mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="weather-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-sun fa-3x mb-3 text-warning"></i>
+                            <h3 class="h4">Cuidados com o calor</h3>
+                            <p>Estratégias para se proteger durante ondas de calor.</p>
+                            <a href="#" class="btn btn-warning mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="weather-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-wind fa-3x mb-3 text-primary"></i>
+                            <h3 class="h4">Segurança em ventos fortes</h3>
+                            <p>Como agir em situações de ventanias e tempestades.</p>
+                            <a href="#" class="btn btn-primary mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card bg-info text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Serviços de Clima</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Consulte a previsão diária</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Receba alertas de tempestades</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Mapa interativo de chuvas</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Dicas de segurança climática</li>
+                            </ul>
+                            <a href="#" class="btn btn-light mt-3">Acessar serviços</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card bg-primary text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Cobertura Especial</h3>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-play-circle fa-2x text-danger me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Transmissão: Atualização do Clima</h4>
+                                    <small>Assista ao vivo neste sábado, 18h</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-microphone-alt fa-2x text-info me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Podcast: Impactos climáticos</h4>
+                                    <small>Entrevistas com meteorologistas e especialistas</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-newspaper fa-2x text-success me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Reportagem: Mudanças climáticas</h4>
+                                    <small>Como o clima afeta a região do Alto Tietê</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Especialistas em Clima -->
+    <section class="weather-experts py-5">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">Especialistas em Clima</h2>
+                <p class="lead">Conselhos de meteorologistas e dicas para enfrentar o clima</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Dr. João Mendes</h3>
+                            <p class="text-muted small">Meteorologista</p>
+                            <p class="card-text">"Monitorar o clima ajuda a prevenir desastres..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/23.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Dra. Laura Costa</h3>
+                            <p class="text-muted small">Climatologista</p>
+                            <p class="card-text">"Mudanças climáticas exigem ações urgentes..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/34.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Sr. Rafael Lima</h3>
+                            <p class="text-muted small">Especialista em Prevenção</p>
+                            <p class="card-text">"Planejamento é essencial para chuvas fortes..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Sra. Ana Ribeiro</h3>
+                            <p class="text-muted small">Engenheira Ambiental</p>
+                            <p class="card-text">"Sustentabilidade ajuda a mitigar impactos climáticos..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-info">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./src/assets/img/wg-news-logo-white.png" alt="WG News" class="footer-logo mb-3">
+                    <p>Jornalismo independente e de qualidade para a região do Alto Tietê. Notícias que importam, reportagens que fazem a diferença.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Editorias</h5>
+                    <ul class="footer-links">
+                        <li><a href="politica.html">Política</a></li>
+                        <li><a href="economia.html">Economia</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="esportes.html">Esportes</a></li>
+                        <li><a href="tecnologia.html">Tecnologia</a></li>
+                        <li><a href="saude.html">Saúde</a></li>
+                        <li><a href="educacao.html">Educação</a></li>
+                        <li><a href="seguranca.html">Segurança</a></li>
+                        <li><a href="meio-ambiente.html">Meio Ambiente</a></li>
+                        <li><a href="eleicoes.html">Eleições</a></li>
+                        <li><a href="weather.html">Clima</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Cidades</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Itaquaquecetuba</a></li>
+                        <li><a href="#">Mogi das Cruzes</a></li>
+                        <li><a href="#">Suzano</a></li>
+                        <li><a href="#">Arujá</a></li>
+                        <li><a href="#">Poá</a></li>
+                        <li><a href="#">Guarulhos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Itaquaquecetuba/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 4002-8922</li>
+                        <li><i class="fas fa-envelope"></i> contato@wgnnews.com.br</li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <h6>Receba nossas notícias</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <button class="btn btn-primary" type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2025 WG News. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Termos de Uso</a> |
+                    <a href="#">Política de Privacidade</a> |
+                    <a href="#">Anuncie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/utils/aos.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+    <script src="./src/assets/js/components/navbar.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <style>
+        /* Estilos específicos para a página de Clima */
+        .weather-header {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .weather-highlight {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+        }
+
+        /* Estilos para as abas de cidades */
+        .city-tabs {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .city-tabs button {
+            background-color: transparent;
+            border: 1px solid #dee2e6;
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.25rem;
+            color: #495057;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .city-tabs button.active {
+            background-color: #17a2b8;
+            color: white;
+            border-color: #17a2b8;
+        }
+
+        .city-tabs button:hover:not(.active) {
+            background-color: #f8f9fa;
+        }
+
+        /* Estilos para os cards de clima */
+        .weather-card {
+            transition: transform 0.3s;
+        }
+
+        .weather-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilos para os cards de especialistas */
+        .expert-card {
+            transition: transform 0.3s;
+        }
+
+        .expert-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .weather-header {
+                text-align: center;
+            }
+            
+            .weather-highlight {
+                margin-top: 1rem;
+                text-align: center;
+            }
+            
+            .city-tabs {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+
+</html>
