@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WG News | Meio Ambiente - Sustentabilidade e Preservação na Região</title>
+    <meta name="description"
+        content="WG News traz notícias sobre meio ambiente, sustentabilidade e preservação em Itaquaquecetuba, Mogi, Suzano e região. Fique por dentro de ações ecológicas, projetos verdes e dicas sustentáveis.">
+    <link rel="icon" type="image/png" href="./src/assets/img/wg-news-logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
+    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
+    <link rel="stylesheet" href="./src/assets/css/pages/environment.css">
+</head>
+
+<body>
+
+    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
+    <div style="height: 200px;"></div>
+
+    <!-- Cabeçalho da Página de Meio Ambiente -->
+    <section class="environment-header py-4 bg-success text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Meio Ambiente</h1>
+                    <p class="lead">Notícias sobre sustentabilidade, preservação e ações ecológicas na região do Alto Tietê</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="environment-highlight">
+                        <h3 class="h5">Semana do Meio Ambiente 2025</h3>
+                        <p>Confira os eventos e ações sustentáveis na região!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque Principal de Meio Ambiente -->
+    <section class="environment-featured py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destaque Principal -->
+                <div class="col-lg-8">
+                    <div class="main-feature card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                            alt="Reflorestamento" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Sustentabilidade</span>
+                            <h1 class="card-title display-6">Projeto de reflorestamento planta 5 mil árvores em Mogi</h1>
+                            <p class="card-text lead">Iniciativa municipal recupera áreas degradadas e promove educação ambiental.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicado há 2 horas | Por Fernanda Souza</small>
+                                <a href="#" class="btn btn-success btn-lg">Ler Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaques Secundários -->
+                <div class="col-lg-4">
+                    <div class="secondary-features d-flex flex-column h-100 gap-3">
+                        <!-- Notícia 1 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1500530855697-b5860a6d76a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Reciclagem" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-1">Reciclagem</span>
+                                <h3 class="card-title h5">Suzano amplia pontos de coleta seletiva</h3>
+                                <p class="card-text small">Novos ecopontos facilitam descarte de recicláveis na cidade.</p>
+                                <small class="text-muted">Publicado há 4 horas</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Preservação" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-warning mb-1">Preservação</span>
+                                <h3 class="card-title h5">Itaquá protege nascentes do Rio Tietê</h3>
+                                <p class="card-text small">Projeto municipal visa preservar fontes de água na região.</p>
+                                <small class="text-muted">Publicado hoje</small>
+                            </div>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Energia renovável" class="card-img-left" style="width: 40%; object-fit: cover;">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-1">Energia</span>
+                                <h3 class="card-title h5">Arujá investe em energia solar para escolas</h3>
+                                <p class="card-text small">Painéis solares reduzem custos e promovem sustentabilidade.</p>
+                                <small class="text-muted">Publicado ontem</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Meio Ambiente Regional -->
+    <section class="regional-environment py-5 bg-light">
+        <div class="container">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Meio Ambiente Regional</h2>
+                <div class="city-tabs">
+                    <button class="active">Itaquá</button>
+                    <button>Mogi</button>
+                    <button>Suzano</button>
+                    <button>Arujá</button>
+                    <button>Poá</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Itaquaquecetuba -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Itaquaquecetuba" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Itaquá</span>
+                            <h3 class="card-title h5">Itaquá promove mutirão de limpeza em rios</h3>
+                            <p class="card-text">Voluntários se unem para retirar lixo de córregos locais.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 4 horas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogi das Cruzes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b5860a6d76a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Mogi das Cruzes" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Mogi</span>
+                            <h3 class="card-title h5">Mogi cria horta comunitária em escolas</h3>
+                            <p class="card-text">Projeto ensina alunos sobre agricultura sustentável.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado hoje</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suzano -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Suzano" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Suzano</span>
+                            <h3 class="card-title h5">Suzano lança campanha contra queimadas</h3>
+                            <p class="card-text">Ações educativas visam reduzir incêndios em áreas verdes.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado ontem</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arujá -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="news-card card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Arujá" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Arujá</span>
+                            <h3 class="card-title h5">Arujá incentiva uso de bicicletas</h3>
+                            <p class="card-text">Novas ciclovias promovem mobilidade sustentável na cidade.</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler mais</a>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-muted">Atualizado há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Meio Ambiente Nacional e Internacional -->
+    <section class="national-international-environment py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Meio Ambiente Nacional -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Meio Ambiente Nacional</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Meio Ambiente Nacional">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-success mb-2">Amazônia</span>
+                                    <h3 class="card-title h5">Governo lança plano para reduzir desmatamento</h3>
+                                    <p class="card-text">Medidas incluem maior fiscalização e incentivos à preservação.</p>
+                                    <small class="text-muted">Publicado há 1 dia</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-primary me-2">Energia</span>
+                            <a href="#" class="text-dark">Brasil amplia investimentos em energia eólica</a>
+                            <small class="text-muted d-block">Publicado há 3 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-warning me-2">Reciclagem</span>
+                            <a href="#" class="text-dark">Programa nacional incentiva economia circular</a>
+                            <small class="text-muted d-block">Publicado há 5 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">Clima</span>
+                            <a href="#" class="text-dark">País se prepara para mudanças climáticas</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-success">Mais notícias nacionais</a>
+                    </div>
+                </div>
+                
+                <!-- Meio Ambiente Internacional -->
+                <div class="col-lg-6">
+                    <div class="section-header mb-4">
+                        <h2 class="section-title">Meio Ambiente Internacional</h2>
+                    </div>
+                    
+                    <div class="news-card card mb-3 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded-start h-100" alt="Meio Ambiente Global">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-danger mb-2">Clima</span>
+                                    <h3 class="card-title h5">Acordo global reduz emissões de carbono</h3>
+                                    <p class="card-text">Países se comprometem com metas mais ambiciosas até 2030.</p>
+                                    <small class="text-muted">Publicado há 2 dias</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news-list">
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-primary me-2">Europa</span>
+                            <a href="#" class="text-dark">UE proíbe plásticos de uso único</a>
+                            <small class="text-muted d-block">Publicado hoje</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-secondary me-2">Ásia</span>
+                            <a href="#" class="text-dark">China planta 2 bilhões de árvores em 2025</a>
+                            <small class="text-muted d-block">Publicado há 4 dias</small>
+                        </div>
+                        <div class="list-item border-bottom py-2">
+                            <span class="badge bg-info me-2">África</span>
+                            <a href="#" class="text-dark">África investe em projetos de energia solar</a>
+                            <small class="text-muted d-block">Publicado há 1 semana</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="#" class="btn btn-outline-success">Mais notícias internacionais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Dicas e Sustentabilidade -->
+    <section class="environment-tips py-5 bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Dicas e Sustentabilidade</h2>
+                <p class="lead">Como contribuir para um planeta mais verde</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="environment-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-recycle fa-3x mb-3 text-success"></i>
+                            <h3 class="h4">Como reciclar corretamente</h3>
+                            <p>Dicas práticas para separar resíduos e apoiar a coleta seletiva.</p>
+                            <a href="#" class="btn btn-success mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="environment-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-tint fa-3x mb-3 text-primary"></i>
+                            <h3 class="h4">Economia de água no dia a dia</h3>
+                            <p>Estratégias simples para reduzir o consumo de água em casa.</p>
+                            <a href="#" class="btn btn-primary mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="environment-card card h-100 border-0 bg-light text-dark">
+                        <div class="card-body">
+                            <i class="fas fa-leaf fa-3x mb-3 text-danger"></i>
+                            <h3 class="h4">Jardinagem sustentável</h3>
+                            <p>Como criar um jardim ecológico com plantas nativas.</p>
+                            <a href="#" class="btn btn-danger mt-3">Ler artigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Ações Sustentáveis</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Participe de mutirões de limpeza</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Apoie projetos de reflorestamento</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Conheça os ecopontos da sua cidade</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Adote práticas de consumo consciente</li>
+                            </ul>
+                            <a href="#" class="btn btn-light mt-3">Saiba como ajudar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card bg-primary text-white h-100">
+                        <div class="card-body">
+                            <h3 class="h4">Cobertura Especial</h3>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-play-circle fa-2x text-danger me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Transmissão: Semana do Meio Ambiente</h4>
+                                    <small>Assista ao vivo neste sábado, 18h</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-microphone-alt fa-2x text-success me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Podcast: Sustentabilidade na região</h4>
+                                    <small>Entrevistas com ambientalistas e especialistas</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-newspaper fa-2x text-info me-3"></i>
+                                <div>
+                                    <h4 class="h6 mb-0">Reportagem: Impacto das ações verdes</h4>
+                                    <small>Como iniciativas locais transformam o Alto Tietê</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Especialistas em Meio Ambiente -->
+    <section class="environment-experts py-5">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2 class="section-title">Especialistas em Meio Ambiente</h2>
+                <p class="lead">Conselhos de profissionais e dicas para um futuro sustentável</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Dra. Ana Ribeiro</h3>
+                            <p class="text-muted small">Bióloga</p>
+                            <p class="card-text">"Preservar nossas áreas verdes é essencial para a biodiversidade..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Dr. Carlos Mendes</h3>
+                            <p class="text-muted small">Engenheiro Ambiental</p>
+                            <p class="card-text">"A gestão de resíduos é a chave para cidades mais limpas..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Sra. Fernanda Lima</h3>
+                            <p class="text-muted small">Ativista Ambiental</p>
+                            <p class="card-text">"Pequenas ações diárias podem transformar o planeta..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="expert-card card h-100 border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/55.jpg" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Especialista">
+                        <div class="card-body text-center">
+                            <h3 class="h5">Dr. Rafael Souza</h3>
+                            <p class="text-muted small">Especialista em Sustentabilidade</p>
+                            <p class="card-text">"Energia renovável é o futuro da nossa região..."</p>
+                            <a href="#" class="btn btn-sm btn-outline-success">Ler coluna</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./src/assets/img/wg-news-logo-white.png" alt="WG News" class="footer-logo mb-3">
+                    <p>Jornalismo independente e de qualidade para a região do Alto Tietê. Notícias que importam, reportagens que fazem a diferença.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Editorias</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Política</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Cultura</a></li>
+                        <li><a href="#">Esportes</a></li>
+                        <li><a href="#">Tecnologia</a></li>
+                        <li><a href="#">Saúde</a></li>
+                        <li><a href="#">Educação</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Meio Ambiente</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Cidades</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Itaquaquecetuba</a></li>
+                        <li><a href="#">Mogi das Cruzes</a></li>
+                        <li><a href="#">Suzano</a></li>
+                        <li><a href="#">Arujá</a></li>
+                        <li><a href="#">Poá</a></li>
+                        <li><a href="#">Guarulhos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro, Itaquaquecetuba/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 4002-8922</li>
+                        <li><i class="fas fa-envelope"></i> contato@wgnnews.com.br</li>
+                    </ul>
+                    <div class="footer-newsletter">
+                        <h6>Receba nossas notícias</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail">
+                                <button class="btn btn-primary" type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2025 WG News. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Termos de Uso</a> |
+                    <a href="#">Política de Privacidade</a> |
+                    <a href="#">Anuncie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/utils/aos.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+    <script src="./src/assets/js/components/navbar.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <style>
+        /* Estilos específicos para a página de Meio Ambiente */
+        .environment-header {
+            background: linear-gradient(135deg, #28a745 0%, #34c759 100%);
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .environment-highlight {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+        }
+
+        /* Estilos para as abas de cidades */
+        .city-tabs {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .city-tabs button {
+            background-color: transparent;
+            border: 1px solid #dee2e6;
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.25rem;
+            color: #495057;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .city-tabs button.active {
+            background-color: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .city-tabs button:hover:not(.active) {
+            background-color: #f8f9fa;
+        }
+
+        /* Estilos para os cards de meio ambiente */
+        .environment-card {
+            transition: transform 0.3s;
+        }
+
+        .environment-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilos para os cards de especialistas */
+        .expert-card {
+            transition: transform 0.3s;
+        }
+
+        .expert-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .environment-header {
+                text-align: center;
+            }
+            
+            .environment-highlight {
+                margin-top: 1rem;
+                text-align: center;
+            }
+            
+            .city-tabs {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+
+</html>
