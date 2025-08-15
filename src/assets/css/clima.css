@@ -1,0 +1,68 @@
+.weather-header {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.weather-highlight {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.city-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.city-tabs button {
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    color: #495057;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.city-tabs button.active {
+    background-color: #17a2b8;
+    color: white;
+    border-color: #17a2b8;
+}
+
+.city-tabs button:hover:not(.active) {
+    background-color: #f8f9fa;
+}
+
+.weather-card {
+    transition: transform 0.3s;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+.expert-card {
+    transition: transform 0.3s;
+}
+
+.expert-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .weather-header {
+        text-align: center;
+    }
+
+    .weather-highlight {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .city-tabs {
+        justify-content: center;
+    }
+}

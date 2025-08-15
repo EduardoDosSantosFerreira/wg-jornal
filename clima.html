@@ -15,15 +15,13 @@
     <link rel="stylesheet" href="./src/assets/css/utils/bootstrap.min.css">
     <link rel="stylesheet" href="./src/assets/css/style.css">
     <link rel="stylesheet" href="./src/assets/css/utils/aos.css">
-    <link rel="stylesheet" href="./src/assets/css/components/news-grid.css">
-    <link rel="stylesheet" href="./src/assets/css/pages/weather.css">
+
+    <link rel="stylesheet" href="./src/assets/clima.css">
 </head>
 
 <body>
-    <!-- Espaçamento para conteúdo abaixo da navbar fixa -->
     <div style="height: 200px;"></div>
 
-    <!-- Cabeçalho da Página de Clima -->
     <section class="weather-header py-4 bg-info text-white">
         <div class="container">
             <div class="row align-items-center">
@@ -41,11 +39,9 @@
         </div>
     </section>
 
-    <!-- Destaque Principal de Clima -->
     <section class="weather-featured py-5">
         <div class="container">
             <div class="row g-4">
-                <!-- Destaque Principal -->
                 <div class="col-lg-8">
                     <div class="main-feature card border-0 shadow-sm h-100">
                         <img src="https://s2-g1.glbimg.com/EHRJxdpgo5MZmOE1ZfD8psFs9rg=/0x0:1920x1080/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/w/Y/gIAcApR6yFx2asHIgTOA/onda-de-calor.png"
@@ -63,10 +59,8 @@
                     </div>
                 </div>
 
-                <!-- Destaques Secundários -->
                 <div class="col-lg-4">
                     <div class="secondary-features d-flex flex-column h-100 gap-3">
-                        <!-- Notícia 1 -->
                         <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
                             <img src="https://cdn.diariodesuzano.com.br/upload/dn_noticia/2019/12/chuva-forte-suzano.jpeg"
                                 alt="Chuva" class="card-img-left" style="width: 40%; object-fit: cover;">
@@ -78,7 +72,6 @@
                             </div>
                         </div>
 
-                        <!-- Notícia 2 -->
                         <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
                             <img src="https://hensistemas.com/wp-content/uploads/2021/08/HS-EMQA-Estacao-de-Monitoramento-da-Qualidade-do-Ar.jpg"
                                 alt="Qualidade do ar" class="card-img-left" style="width: 40%; object-fit: cover;">
@@ -90,7 +83,6 @@
                             </div>
                         </div>
 
-                        <!-- Notícia 3 -->
                         <div class="secondary-feature card flex-row h-100 border-0 shadow-sm">
                             <img src="https://jornalouvidor.com.br/wp-content/uploads/2023/02/PDE-Aruja.jpg"
                                 alt="Clima extremo" class="card-img-left" style="width: 40%; object-fit: cover;">
@@ -156,7 +148,6 @@
                     </div>
                 </div>
 
-                <!-- Suzano -->
                 <div class="col-md-6 col-lg-3">
                     <div class="weather-card card h-100 border-0 shadow-sm">
                         <img src="https://images.unsplash.com/photo-1515694346937-94d8f66f4c6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
@@ -173,7 +164,6 @@
                     </div>
                 </div>
 
-                <!-- Arujá -->
                 <div class="col-md-6 col-lg-3">
                     <div class="weather-card card h-100 border-0 shadow-sm">
                         <img src="https://images.unsplash.com/photo-1473496169904-658ba7b873b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
@@ -193,11 +183,9 @@
         </div>
     </section>
 
-    <!-- Seção de Clima Nacional e Internacional -->
     <section class="national-international-weather py-5">
         <div class="container">
             <div class="row">
-                <!-- Clima Nacional -->
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="section-header mb-4">
                         <h2 class="section-title">Clima Nacional</h2>
@@ -243,7 +231,6 @@
                     </div>
                 </div>
 
-                <!-- Clima Internacional -->
                 <div class="col-lg-6">
                     <div class="section-header mb-4">
                         <h2 class="section-title">Clima Internacional</h2>
@@ -293,7 +280,6 @@
         </div>
     </section>
 
-    <!-- Seção de Dicas e Alertas Climáticos -->
     <section class="weather-tips py-5 bg-dark text-white">
         <div class="container">
             <div class="section-header text-center mb-5">
@@ -387,7 +373,6 @@
         </div>
     </section>
 
-    <!-- Seção de Especialistas em Clima -->
     <section class="weather-experts py-5">
         <div class="container">
             <div class="section-header mb-5">
@@ -455,10 +440,8 @@
         </div>
     </section>
 
-    <!-- Botão Voltar ao Topo -->
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-    <!-- Scripts -->
     <script src="./src/assets/js/utils/bootstrap.bundle.min.js"></script>
     <script src="./src/assets/js/utils/aos.js"></script>
     <script src="./src/assets/js/script.js"></script>
@@ -471,81 +454,6 @@
             once: true
         });
     </script>
-    <style>
-        /* Estilos específicos para a página de Clima */
-        .weather-header {
-            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
-            padding: 2rem 0;
-            margin-bottom: 2rem;
-        }
-
-        .weather-highlight {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-        }
-
-        /* Estilos para as abas de cidades */
-        .city-tabs {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .city-tabs button {
-            background-color: transparent;
-            border: 1px solid #dee2e6;
-            padding: 0.375rem 0.75rem;
-            border-radius: 0.25rem;
-            color: #495057;
-            font-size: 0.875rem;
-            transition: all 0.2s;
-        }
-
-        .city-tabs button.active {
-            background-color: #17a2b8;
-            color: white;
-            border-color: #17a2b8;
-        }
-
-        .city-tabs button:hover:not(.active) {
-            background-color: #f8f9fa;
-        }
-
-        /* Estilos para os cards de clima */
-        .weather-card {
-            transition: transform 0.3s;
-        }
-
-        .weather-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Estilos para os cards de especialistas */
-        .expert-card {
-            transition: transform 0.3s;
-        }
-
-        .expert-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .weather-header {
-                text-align: center;
-            }
-
-            .weather-highlight {
-                margin-top: 1rem;
-                text-align: center;
-            }
-
-            .city-tabs {
-                justify-content: center;
-            }
-        }
-    </style>
 </body>
 
 </html>
